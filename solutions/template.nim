@@ -1,4 +1,4 @@
-const puzzleInput = readFile("inputs/.txt")
+const puzzleInput = readFile("inputs/day_.txt")
 
 proc day_part1*(): string =
   discard
