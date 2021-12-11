@@ -11,14 +11,8 @@ build:
 all: build
 	docker run -it --rm ${ARGS} ${TARGET} all
 
-day1: build
-	docker run -it --rm ${ARGS} ${TARGET} day --number 1
-
-day2: build
-	docker run -it --rm ${ARGS} ${TARGET} day --number 2
-
-day3: build
-	docker run -it --rm ${ARGS} ${TARGET} day --number 3
+day: build
+	docker run -it --rm ${ARGS} ${TARGET} day --number ${DAY}
 
 help: build
 	docker run -it --rm ${TARGET} --help
