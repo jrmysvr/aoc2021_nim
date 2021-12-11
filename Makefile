@@ -5,7 +5,7 @@ ARGS=-v $(shell pwd):/aoc
 format:
 	nimpretty aoc2021.nim solutions/*.nim
 
-build: format
+build:
 	docker build --tag ${TARGET} .
 
 all: build
@@ -16,6 +16,9 @@ day1: build
 
 day2: build
 	docker run -it --rm ${ARGS} ${TARGET} day --number 2
+
+day3: build
+	docker run -it --rm ${ARGS} ${TARGET} day --number 3
 
 help: build
 	docker run -it --rm ${TARGET} --help
