@@ -1,4 +1,4 @@
-import solutions/[day1, day2, day3, day4]
+import solutions/[day1, day2, day3, day4, day5]
 import cligen
 
 
@@ -26,6 +26,11 @@ proc day(number: int) =
             echo day4part1()
             echo "Day 4 Part 2"
             echo day4part2()
+        of 5:
+            echo "Day 5 Part 1"
+            echo day5part1()
+            echo "Day 5 Part 2"
+            echo day5part2()
         else:
             echo "Day number ", number, " is not implemented yet..."
 
@@ -33,7 +38,7 @@ proc all() =
     ## Run all implemented solutions
     echo "Running all solutions!"
 
-    const nDays = 4
+    const nDays = 5
     for i in 0..nDays:
         day(i)
         echo ""
