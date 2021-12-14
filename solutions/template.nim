@@ -5,3 +5,6 @@ proc day_part1*(): string =
 
 proc day_part2*(): string =
   discard
+
+when isMainModule:
+  discard
