@@ -7,4 +7,7 @@ proc day_part2*(): string =
   discard
 
 when isMainModule:
-  discard
+  echo "Day _, Part 1"
+  echo day_part1()
+  echo "Day _, Part 2"
+  echo day_part2()

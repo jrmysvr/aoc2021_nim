@@ -78,3 +78,9 @@ proc day6part2*(): string =
 
   result = $nodeId
 ]#
+
+when isMainModule:
+  echo "DAy 6, Part 1"
+  echo day6part1()
+  echo "DAy 6, Part 2"
+  echo day6part2()
